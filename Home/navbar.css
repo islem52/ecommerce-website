@@ -1,0 +1,43 @@
+.button-container {
+  position: fixed;
+  top: 10px;
+  display: flex;
+  background-color: rgba(0, 73, 144);
+  width: 450px;
+  height: 55px; /* Use the correct height */
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: transform 1s ease; /* Use one consistent transition time */
+  z-index: 99;
+  /* to position the nav in center place */
+  left: 50%;
+  translate: -50% 0;
+}
+
+.button {
+  outline: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.icon {
+  font-size: 20px;
+  color: #fff;
+}
+
+.button.active {
+  background-color: rgba(255, 255, 255, 0.3);
+}

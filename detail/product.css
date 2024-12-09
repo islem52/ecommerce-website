@@ -1,0 +1,121 @@
+/* Enhanced Product Page Styles */
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.product-details {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.product-details h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.product-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  border: 1px solid #dddddd; /* Subtle border */
+}
+
+.img-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 40%;
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 70px;
+  height: 70px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border 0.3s, transform 0.3s;
+}
+
+.thumbnail:hover {
+  border: 2px solid rgba(0, 73, 144);
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.product-description {
+  margin: 15px 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555; /* Softer text color */
+}
+
+.quantity-control {
+  margin: 10px 0;
+}
+
+.quantity-control label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e74c3c; /* Highlighted price color */
+}
+
+.buy-button {
+  background-color: rgba(0, 73, 144);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 16px;
+}
+
+.buy-button:hover {
+  background-color: rgba(0, 60, 120);
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+@media (max-width: 768px) {
+  .product-content {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
+  }
+
+  .img-section,
+  .product-definition {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .thumbnail-container {
+    justify-content: center; /* Center thumbnails */
+    flex-wrap: wrap; /* Allow thumbnails to wrap */
+  }
+
+  .thumbnail {
+    margin: 5px; /* Add spacing between thumbnails */
+  }
+}
